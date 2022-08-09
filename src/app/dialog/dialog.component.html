@@ -1,1 +1,37 @@
-<p>dialog works!</p>
+<h1 mat-dialog-title> Add Person </h1>
+<div mat-dialog-content>
+     <form [formGroup] = "personForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input formControlName="personName" matInput placeholder="Enter Name">
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+              <mat-label>Age</mat-label>
+              <input formControlName="age" matInput type="number" placeholder="Enter Age">
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+              <mat-label>Birthday</mat-label>
+              <input formControlName="birthday" matInput [matDatepicker]="picker">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+  
+          <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Phone Number</mat-label>
+              <span matPrefix>+1 &nbsp;</span>
+              <input formControlName="phoneNumber" type="tel" matInput placeholder="555-555-1234">
+              <mat-icon matSuffix>mode_edit</mat-icon>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+              <mat-label>Bank Account</mat-label>
+              <input  formControlName="bankAccount" matInput type="number" placeholder="Enter Name">
+          </mat-form-field>
+     </form>
+</div>
+<div mat-dialog-action [align]="'end'"> 
+    <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+    <button style="margin-left: 12px" mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+</div>
