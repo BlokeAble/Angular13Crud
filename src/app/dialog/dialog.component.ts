@@ -64,7 +64,7 @@ export class DialogComponent implements OnInit {
 
   updatePerson()
   {
-    this.api.putPerson(this.personForm.value, this.editData.id)
+    this.api.putPerson(this.editData.id, this.personForm.value,)
     .subscribe({
       next: (res) => {
         alert("Person Updated successfully")
