@@ -12,4 +12,6 @@ json-server --watch db.json
 ## API endpoints 
 post http://localhost:8081/api/person
 
+# Flaws in the code 
+Cors was handle with '*'
 
