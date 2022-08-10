@@ -6,6 +6,10 @@ Json-Server
 ## MongoDB/Express Deps
 npm install express mongoose cors --save
 
+## PLace Holder Data
+https://www.convertcsv.com/generate-test-data.htm
+
+
 ## CMD
 json-server --watch db.json
 
