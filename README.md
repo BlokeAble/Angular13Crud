@@ -1,17 +1,13 @@
 # Angular13Crud
 
-## Database Temp 
-Json-Server
-
 ## MongoDB/Express Deps
 npm install express mongoose cors --save
 
-## PLace Holder Data
+## DumbyData
 https://www.convertcsv.com/generate-test-data.htm
 
-
-## CMD
-json-server --watch db.json
+## Start DB
+node server.js 
 
 ## API endpoints 
 post http://localhost:8081/api/person
